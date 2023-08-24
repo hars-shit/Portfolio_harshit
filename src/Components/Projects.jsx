@@ -15,10 +15,18 @@ background: linear-gradient(to right, #87CEEB, #5E9FFF);
 color: transparent;
 `
 const Contain=styled(Box)({
-display:'flex',
+display:'grid',
 justifyContent:'center',
 alignItems:'center',
-flexDirection:'column',
+gridTemplateColumns:'auto',
+'@media (min-width:1200px)':{
+    gridTemplateColumns:'auto auto',
+    gridGap:'3rem',
+   
+    
+ 
+    
+ },
 })
 const Details=styled(Box)`
 padding: 1.5rem;

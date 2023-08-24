@@ -11,7 +11,13 @@ const Column=styled(Container)({
     flexDirection:'column',
     background: 'linear-gradient(38.73deg, rgba(204, 0, 187, 0.15) 0%, rgba(201, 32, 184, 0) 50%), linear-gradient(141.27deg, rgba(0, 70, 209, 0) 50%, rgba(0, 70, 209, 0.15) 100%)',
     width: '100%',
+    paddingBottom:'2rem',
     clipPath: 'polygon(0px 0px, 100% 0px, 100% 100%, 100% 100%, 0px 100%)',
+    '@media (min-width:1200px)':{
+        marginTop:'5rem',
+       
+     },
+
 
 })
 const Name=styled(Typography)`
@@ -41,7 +47,7 @@ const About=({about})=> {
   return (
     <>
         <Box ref={about}>
-        <Typography color={'#87CEEB'} textAlign={'center'} marginBottom={6} fontSize={20} fontWeight={600}>Get To Know More</Typography>
+        <Typography color={'#87CEEB'} textAlign={'center'} marginBottom={6} fontSize={20} fontWeight={600}>Scroll To Know More</Typography>
         </Box>
         <Column>
         <Box>
