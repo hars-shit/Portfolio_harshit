@@ -1,0 +1,16 @@
+
+.check_if_true{
+   
+    background:#4e54c8;
+    height:48px;
+    display:flex;
+    border-radius:30px;
+    justify-content:center;
+    align-items:center;
+    width:78px;
+    font-weight: bold;
+}
+.check_if_false{
+    display: none;
+
+}
