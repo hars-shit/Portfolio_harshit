@@ -89,15 +89,20 @@ const Typo=styled(Typography)({
 const Icon=styled(Box)({
     display:'flex',
      justifyContent:'center',
-      marginBottom:'10rem', gap:'2.5rem',
+      marginBottom:'10rem', 
+      gap:'2.5rem',
        alignItems:'center',
-    '& > svg':{
-        fontSize:"2rem",
-        color:'rgb(182 206 227)',
-        cursor:'pointer',
-        '@media (min-width:1200px)':{
-            fontSize:'3rem',
-        },
+       zIndex:10,
+       '& > a':{
+           '& > svg':{
+               
+               fontSize:"2rem",
+               color:'rgb(182 206 227)',
+               cursor:'pointer',
+               '@media (min-width:1200px)':{
+                   fontSize:'3rem',
+                },
+            }
     }
 })
 const Intro=()=> {
@@ -122,11 +127,11 @@ const handleClick=()=>{
             <Btn1 ><a style={{textDecoration:'none',color:'#bfcefb'}} href="https://drive.google.com/file/d/1mRhqO3AiOhKr944LG8ud26P67VJ76MDO/view?usp=drivesdk">Download CV</a></Btn1>
             <Btn2 onClick={handleClick}>Contact Info</Btn2>
         </Box>
-        <Icon >
-            <BsFacebook />
-            <AiFillGithub />
-            <AiFillInstagram />
-            <AiFillLinkedin />
+        <Icon>
+            <a  href="https://www.linkedin.com/in/harshit-upadhyay-b1231922a"><BsFacebook /></a>
+            <a href="https://github.com/hars-shit"><AiFillGithub /></a>
+            <a href="https://instagram.com/harshitupadhyaya?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><AiFillInstagram /></a>
+            <a href="https://www.facebook.com/harshit.upadhyay.332345"><AiFillLinkedin /></a>
 
         </Icon>
         <Arrow>

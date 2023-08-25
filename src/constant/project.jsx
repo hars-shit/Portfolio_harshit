@@ -3,7 +3,7 @@ const projects=[
         image:'/assets/aarush1.png',
         name:'Aarush Restaurant',
         link:'https://github.com/hars-shit/Aarush-Restaurant',
-        live:'aarush-restaurant.vercel.app',
+        live:'https://aarush-restaurant.netlify.app/',
 
     },
     {
