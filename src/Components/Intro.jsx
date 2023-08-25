@@ -128,10 +128,11 @@ const handleClick=()=>{
             <Btn2 onClick={handleClick}>Contact Info</Btn2>
         </Box>
         <Icon>
-            <a  href="https://www.linkedin.com/in/harshit-upadhyay-b1231922a"><BsFacebook /></a>
+        
+            <a  href="https://www.facebook.com/harshit.upadhyay.332345"><BsFacebook /></a>
             <a href="https://github.com/hars-shit"><AiFillGithub /></a>
             <a href="https://instagram.com/harshitupadhyaya?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><AiFillInstagram /></a>
-            <a href="https://www.facebook.com/harshit.upadhyay.332345"><AiFillLinkedin /></a>
+            <a href="https://www.linkedin.com/in/harshit-upadhyay-b1231922a"><AiFillLinkedin /></a>
 
         </Icon>
         <Arrow>
