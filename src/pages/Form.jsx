@@ -1,7 +1,8 @@
-import React, { useRef } from 'react';
+import  { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import styled from '@emotion/styled';
-import { Box, Button, InputBase, Typography } from '@mui/material';
+import { InputBase, Typography } from '@mui/material';
+import Notification from '../Components/Notification';
 
 const Name=styled(Typography)`
 font-size:30px;
@@ -33,9 +34,11 @@ const Btn=styled('button')({
   fontWeight:600,
   transition:'all 300ms ease',
   width:'10rem',
+  zIndex:11111111111,
   border:'1px solid #bfcefb',
   borderRadius:'2rem',
   height:'3rem',
+  cursor:'pointer',
   color:'#bfcefb',
   '@media (min-width:1200px)':{
       marginTop:'2rem',
@@ -45,11 +48,29 @@ const Btn=styled('button')({
 
 })
 const Form = () => {
+  const [name,setName]=useState('')
+  const [email,setEmail]=useState('')
+  const [message,setMessage]=useState('')
   const form = useRef();
+  const [show,setShow]=useState(false)
+  const [warn,setWarn]=useState(false)
+  const handleName=(e)=>{
+    setName(e.target.value);
+  }
+  const handleEmail=(e)=>{
+    setEmail(e.target.value);
+  }
+  const handleMessage=(e)=>{
+    setMessage(e.target.value);
+  }
 
+  // console.log(name,email,message)
   const sendEmail = (e) => {
     e.preventDefault();
-
+    if(!name || !email || !message){
+    setWarn(true)
+    }
+    setShow(true)
     emailjs.sendForm('service_qwehe62', 'template_9ov3i7a',form.current, 'ZrX4X_IoPovPpwQo7')
       .then((result) => {
           console.log(result);
@@ -60,13 +81,15 @@ const Form = () => {
   };
   return (
    <>
+   {show && <Notification open={show} setOpen={setShow}/>}
+   {warn && <Notification warn={warn} open={warn} setOpen={setWarn}/>}
 
-    <Main ref={form} style={{position:'static'}}>
+    <Main onSubmit={sendEmail}  style={{position:'static'}}>
     <Name>Connect With Me</Name>
-      <InputBase type="text" name="to_name" placeholder='name' style={{background:"#f1e8e8",padding:"5px",width:"300px",borderRadius:'10px',marginBottom:'1.5rem'}} />
-      <InputBase type="email" name="from_name" placeholder='email address' style={{background:"#f1e8e8",padding:"5px",width:"300px",borderRadius:'10px',marginBottom:'1.5rem'}} />
-      <InputBase name="message" placeholder='message' style={{background:"#f1e8e8",padding:"5px",width:"300px",borderRadius:'10px',marginBottom:'1.5rem'}}/>
-      <Btn onClick={sendEmail}>send</Btn>
+      <InputBase type="text" name="name" value={name} onChange={handleName} placeholder='name' style={{background:"#f1e8e8",padding:"5px",width:"300px",borderRadius:'10px',marginBottom:'1.5rem'}} />
+      <InputBase type="email" name="email" value={email} onChange={handleEmail} placeholder='email address' style={{background:"#f1e8e8",padding:"5px",width:"300px",borderRadius:'10px',marginBottom:'1.5rem'}} />
+      <InputBase name="message" value={message} onChange={handleMessage} placeholder='message' style={{background:"#f1e8e8",padding:"5px",width:"300px",borderRadius:'10px',marginBottom:'1.5rem'}}/>
+      <Btn type='submit'>send</Btn>
     </Main>
    </>
     
