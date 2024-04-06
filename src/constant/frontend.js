@@ -39,5 +39,20 @@ const frontend=[
         image:
           "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.pngaaa.com%2F704%2F7959704-middle.png&f=1&nofb=1&ipt=2bd572a0d30c2270035e5de4cf07392aa8c3fc0fd9568815b4f66ec32184fd50&ipo=images",
       },
+      {
+        name:"Tailwind",
+        image:
+        "https://w7.pngwing.com/pngs/293/485/png-transparent-tailwind-css-hd-logo-thumbnail.png"
+      },
+      {
+        name:"Express.js",
+        image:
+        "https://e7.pngegg.com/pngimages/477/472/png-clipart-node-js-javascript-react-logo-express-js-javascript-logo-text-trademark.png"
+      },
+      {
+        name:"MongoDb",
+        image:
+        "https://w7.pngwing.com/pngs/956/695/png-transparent-mongodb-original-wordmark-logo-icon-thumbnail.png"
+      }
 ]
 export default frontend

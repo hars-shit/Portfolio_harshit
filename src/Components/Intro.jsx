@@ -118,13 +118,13 @@ const handleClick=()=>{
         </Box>
         <Box gap={1} marginBottom={1}>
             {/* <MdLocationPin color={'#87CEEB'}  fontSize={20}/> */}
-            <Typo color={'#87CEEB'} fontSize={20} fontWeight={600}>Frontend Developer</Typo>
+            <Typo color={'#87CEEB'} fontSize={20} fontWeight={600}>Website Developer</Typo>
         </Box>
         <Box display={'flex'} gap={2} marginBottom={3.5} justifyContent={'center'} >
           {/* <Typography fontSize={16.5} maxWidth={500} color={'#a9c6ff'} >
               I'm a  B.Tech fourth year student at Institute of Technology Gopeshwar , I am currently creating frontend React websites.
             </Typography> */}
-            <Btn1 ><a style={{textDecoration:'none',color:'#bfcefb'}} href="https://drive.google.com/file/d/1mRhqO3AiOhKr944LG8ud26P67VJ76MDO/view?usp=drivesdk">Download CV</a></Btn1>
+            <Btn1 ><a style={{textDecoration:'none',color:'#bfcefb'}} href="https://drive.google.com/file/d/1A6Ke0ytos3t4ByCEZbaUQwqdkkY2xxo7/view">Download CV</a></Btn1>
             <Btn2 onClick={handleClick}>Contact Info</Btn2>
         </Box>
         <Icon>

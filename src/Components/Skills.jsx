@@ -69,7 +69,7 @@ const Skills=({skills})=> {
             Here are some of my skills on which I have been working on for the past 1+ year.
         </Box>
         <Details>
-            <Typography fontWeight={600} marginBottom={4} fontSize={28} color={'#87CEEB'}>Frontend</Typography>
+            <Typography fontWeight={600} marginBottom={4} fontSize={28} color={'#87CEEB'}>Web Development</Typography>
             <Box>
 
                 {

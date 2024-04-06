@@ -57,7 +57,7 @@ const About=({about})=> {
             <Details>
                 <PermContactCalendarIcon style={{color:'rgb(48,110,232)' , fontSize:'2rem'}} />
                 <Typography>Learning</Typography>
-                <Typography>1+ years Frontend Development</Typography>
+                <Typography>Website Development</Typography>
             </Details>
             <Details>
         <SchoolIcon style={{color:'rgb(48,110,232)',fontSize:'2rem'}}/>
@@ -74,7 +74,7 @@ const About=({about})=> {
     maxWidth: '600px', // Set a maximum width to control line length
     margin: '0 auto', // Center align the text
   }}>
-                I am Harshit Upadhyay, a dedicated fontend developer. With a strong command of HTML , CSS , JavaScript and React. I transform designs into seamless,interactive web experiences. 
+                I am Harshit Upadhyay, a dedicated fontend developer. With a strong command of HTML , CSS, Bootstrap, MUI, Tailwind CSS, Chakra UI, Redux Toolkit, JavaScript and React.I have also worked on Backend technologies majorly in Express.js and No SQL databases such like MongoDb. I transform designs into seamless,interactive web experiences. 
                 I'm passionate about optimizing user interfaces for speed and responsiveness while maintaining a keen eye for design aesthetics.
                 </Typography> 
         </Box>

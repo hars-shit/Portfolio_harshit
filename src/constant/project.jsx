@@ -1,16 +1,23 @@
 const projects=[
     {
+        image:'/assets/oa.png',
+        name:'Oakwood Resort',
+        link:'https://github.com/hars-shit/Resort-website',
+        live:'https://resort-website-gules.vercel.app/',
+
+    },
+    {
+        image:'/assets/doc.png',
+        name:'Doctors Appointment',
+        link:'https://github.com/Dollymm/Doctor-appointment',
+        live:'https://doctor-appointment-xi.vercel.app/',
+
+    },
+    {
         image:'/assets/aarush1.png',
         name:'Aarush Restaurant',
         link:'https://github.com/hars-shit/Aarush-Restaurant',
         live:'https://aarush-restaurant.netlify.app/',
-
-    },
-    {
-        image:'/assets/intsa.jpeg',
-        name:'Instant Rescue',
-        link:'https://github.com/hars-shit/Instant-Rescue',
-        live:'https://insta-rescue.netlify.app/',
 
     },
     {
@@ -21,11 +28,11 @@ const projects=[
 
     },
     {
-        image:'/assets/netflix.png',
-        name:'Netflix UI Clone',
-        link:'https://github.com/hars-shit/Netflix',
-        live:'https://netflix-harshit.netlify.app/',
+        image:'/assets/intsa.jpeg',
+        name:'Instant Rescue',
+        link:'https://github.com/hars-shit/Instant-Rescue',
+        live:'https://insta-rescue.netlify.app/',
 
-    }
+    },
 ]
 export default projects
